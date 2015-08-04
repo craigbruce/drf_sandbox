@@ -20,7 +20,8 @@ Use httpie with `http -f POST http://127.0.0.1:8000/file_manager/ name='some fil
 
 Obtain the path of the first uploaded file:
 
-  >>> from file_manager.models import FileManager
-  >>> files = FileManager.objects.all()
-  >>> files[0].file.name
-  u'uploads/my_file.txt'
+    >>> from file_manager.models import FileManager
+    >>> files = FileManager.objects.all()
+    >>> files[0].file.name
+    u'uploads/my_file.txt'
+
