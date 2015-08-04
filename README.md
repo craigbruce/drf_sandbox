@@ -18,3 +18,9 @@ Use the DRF HTML form to test with [http://127.0.0.1:8000/file_manager/](http://
 
 Use httpie with `http -f POST http://127.0.0.1:8000/file_manager/ name='some file' file@~/Desktop/file.txt`
 
+Obtain the path of the first uploaded file:
+
+>>> from file_manager.models import FileManager
+>>> files = FileManager.objects.all()
+>>> files[0].file.name
+u'uploads/my_file.txt'
