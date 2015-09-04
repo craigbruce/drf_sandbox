@@ -25,3 +25,7 @@ Obtain the path of the first uploaded file:
     >>> files[0].file.name
     u'uploads/my_file.txt'
 
+Use a script to upload a file:
+
+    $ export DJANGO_SETTINGS_MODULE=drf_sandbox.settings
+    $ python save_a_file_to_a_model.py
