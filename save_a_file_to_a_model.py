@@ -14,7 +14,7 @@ def savefile():
     f.write('I am contents')
     new_file = FileManager.objects.create(name='test file')
     # Save local file to FileField in our model
-    new_file.file.save('new file name', File(f))
+    new_file.file.save('new file name.oeb', File(f))
     f.close()
 
 if __name__ == "__main__":
